@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--=============== FAVICON ===============-->
+
+<!-- Modern browsers -->
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+
+<!-- Apple devices -->
+<link rel="apple-touch-icon" href="./favicon.svg">
+
+<!-- PWA / Mobile browsers -->
+<meta name="theme-color" content="#0f172a">    
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title> Omiru's Portfolio </title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">O M I R U.</a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item ">
+                        <a href="#home" class="nav__link">
+                            <i class='bx bx-home'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item ">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-square-dots'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--=============== theme change button ===============-->
+            <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
+
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hello, I'm</span>
+                    <h1 class="home__name">Omiru Ranshan</h1>
+                    <h3 class="home__education">AI Undergraduate</h3>
+
+                    <div class="home__button">
+                        <a download="" href="assets/pdf/hailee-Cv.pdf" class="button button--ghost">
+                            Download CV
+                        </a>
+
+                        <a href="#about" class="button">About</a>
+                    </div>
+                </div>
+
+                <div class="home__handle">
+                    <img src="assets/img/omiru.png" alt="" class="home__img">
+                </div>
+
+                <div class="home__social">
+                    <a href="#" target="_blank" class="home__social-link">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="#" target="_blank" class="home__social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="#" target="_blank" class="home__social-link">
+                        <i class='bx bxl-dribbble'></i>
+                    </a>
+                </div>
+
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <span class="section__subtitle">My Intro</span>
+            <h2 class="section__title">About Me</h2>
+
+            <div class="about__container container grid">
+                <img src="assets/img/about.png" alt="" class="about__img">
+
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class='bx bx-award about__icon'></i>
+                            <h3 class="about__title">Experience</h3>
+                            <span class="about__subtitle">2 Years Working</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-briefcase-alt about__icon'></i>
+                            <h3 class="about__title">Completed</h3>
+                            <span class="about__subtitle">48+ Projects</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-support about__icon'></i>
+                            <h3 class="about__title">Support</h3>
+                            <span class="about__subtitle">Online 24/7</span>
+                        </div>
+                    </div>
+
+                    <p class="about__description">
+                        AI Undergraduate passionate about Artificial Intelligence,  
+                        Machine Learning, Data Science, and building modern tech solutions.
+                    </p>
+
+                    <a href="#contact" class="button about__button-contact">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SKILLS ===============-->
+<section class="skills section" id="skills">
+    <span class="section__subtitle">My Abilities</span>
+    <h2 class="section__title">My Skills</h2>
+
+    <div class="skills__container container grid">
+
+        <!-- AI & Machine Learning -->
+        <div class="skills__content">
+            <h3 class="skills__title">AI & Machine Learning</h3>
+
+            <div class="skills__box">
+                <div class="skills__group">
+
+                    <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+
+                        <div>
+                            <h3 class="skills__name">Python</h3>
+                            <span class="skills__level">Intermediate</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+
+                        <div>
+                            <h3 class="skills__name">Machine Learning</h3>
+                            <span class="skills__level">Intermediate</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+
+                        <div>
+                            <h3 class="skills__name">Deep Learning</h3>
+                            <span class="skills__level">Beginner</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="skills__group">
+
+                    <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+
+                        <div>
+                            <h3 class="skills__name">TensorFlow</h3>
+                            <span class="skills__level">Beginner</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+
+                        <div>
+                            <h3 class="skills__name">Scikit-learn</h3>
+                            <span class="skills__level">Intermediate</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+
+                        <div>
+                            <h3 class="skills__name">Google Colab</h3>
+                            <span class="skills__level">Advanced</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Science -->
+        <div class="skills__content">
+            <h3 class="skills__title">Data Science</h3>
+
+            <div class="skills__box">
+                <div class="skills__group">
+
+                    <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+
+                        <div>
+                            <h3 class="skills__name">Pandas</h3>
+                            <span class="skills__level">Intermediate</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+
+                        <div>
+                            <h3 class="skills__name">NumPy</h3>
+                            <span class="skills__level">Intermediate</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+
+                        <div>
+                            <h3 class="skills__name">Matplotlib</h3>
+                            <span class="skills__level">Beginner</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="skills__group">
+
+                    <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+
+                        <div>
+                            <h3 class="skills__name">SQL</h3>
+                            <span class="skills__level">Intermediate</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+
+                        <div>
+                            <h3 class="skills__name">Power BI</h3>
+                            <span class="skills__level">Beginner</span>
+                        </div>
+                    </div>
+
+                    <div class="skills__data">
+                        <i class='bx bxs-badge-check'></i>
+
+                        <div>
+                            <h3 class="skills__name">Data Visualization</h3>
+                            <span class="skills__level">Intermediate</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </section>
+
+        <!--=============== QUALIFICATIONS ===============-->
+<section class="qualification section" id="qualification">
+    <span class="section__subtitle">My Journey</span>
+    <h2 class="section__title">My Qualifications & Certifications</h2>
+
+    <div class="qualification__container container grid">
+
+        <!-- Education -->
+        <div class="qualification__content">
+            <h3 class="qualification__title">
+                <i class='bx bx-book-open qualification__title-icon'></i>
+                Education
+            </h3>
+
+            <div class="qualification__timeline">
+
+                <div class="qualification__item">
+                    <span class="qualification__year">2026 - Present</span>
+
+                    <h6 class="qualification__subtitle"></h6>
+
+                    <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                        
+                        <img src="assets/img/pearson.png" alt="Pearson Logo" width="50" height="50">
+                        <img src="assets/img/nebula.png" alt="Nebula Logo" width="50" height="50">
+                    </div>
+
+                    <h5 class="qualification__subtitle">HND in Digital Technologies (AI)</h5>
+                    <h5 class="qualification__subtitle">Pearson BTEC | Nebula Institute of Technology</h5>
+                    <p class="qualification__description">
+                        Learning Artificial Intelligence, Machine Learning, programming, databases, and modern software technologies.
+                    </p>
+                </div>
+
+                <div class="qualification__item">
+                    <span class="qualification__year">2025 - 2026</span>
+
+                    <h6 class="qualification__subtitle"></h6>
+
+                    <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                        
+                        <img src="assets/img/harvard.jpeg" alt="Harvard Logo" width="50" height="50">
+                        <img src="assets/img/edx.png" alt="edX Logo" width="50" height="50">
+                    </div>
+
+                    <h4 class="qualification__subtitle">Data Science Studies</h4>
+                    <h5 class="qualification__subtitle">Harvard University | edX</h5>
+                    <p class="qualification__description">
+                        Exploring data analysis, visualization, Python programming, and machine learning concepts.
+                    </p>
+                </div>
+
+                <div class="qualification__item">
+                    <span class="qualification__year">2024 - 2025</span>
+
+                    <h6 class="qualification__subtitle"></h6>
+
+                    <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 10px;">
+                        
+                        <img src="assets/img/pearson.png" alt="Pearson Logo" width="50" height="50">
+                        <img src="assets/img/esoft.png" alt="ESOFT Logo" width="50" height="50">
+                    </div>
+
+
+                    <h4 class="qualification__subtitle">Diploma in Software Engineering</h4>
+                    <h5 class="qualification__subtitle">Pearson BTEC | ESOFT Metro Campus</h5>
+                    <p class="qualification__description">
+                        Gained knowledge in software development, web technologies, databases, and system design.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="qualification__content">
+            <h3 class="qualification__title">
+                <i class='bx bx-award qualification__title-icon'></i>
+                Certifications
+            </h3>
+
+            <div class="qualification__timeline">
+
+                <div class="qualification__item">
+                    <span class="qualification__year">2026</span>
+                    <h4 class="qualification__subtitle">CS50x | CS50AI | CS50P</h4>
+
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <img src="assets/img/cs50.png" alt="HarvardX Logo" width="50" height="50">
+                        <h5 class="qualification__subtitle">HarvardX</h5>
+                    </div>
+
+                    <a href="YOUR_HARVARD_LINK_HERE" target="_blank" class="button button--small">View Certificate</a>
+
+                </div>
+
+                <div class="qualification__item">
+                    <span class="qualification__year">2025</span>
+                    <h4 class="qualification__subtitle">Deep Learning & Machine Learning Specialization</h4>
+
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <img src="assets/img/deep.png" alt="Deep Learning Logo" width="50" height="50">
+                        <h5 class="qualification__subtitle">DeepLearning.AI</h5>
+                    </div>
+
+                     <a href="YOUR_HARVARD_LINK_HERE" target="_blank" class="button button--small">View Certificate</a>
+
+                </div>
+
+                <div class="qualification__item">
+                    <span class="qualification__year">2025</span>
+                    <h4 class="qualification__subtitle">Virtual Reality Specialization</h4>
+
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <img src="assets/img/unil.jpeg" alt="University of London Logo" width="50" height="50">
+                        <h5 class="qualification__subtitle">University of London</h5>
+                    </div>
+
+                     <a href="YOUR_HARVARD_LINK_HERE" target="_blank" class="button button--small">View Certificate</a>
+
+                </div>
+
+                <div class="qualification__item">
+                    <span class="qualification__year">2025</span>
+                    <h4 class="qualification__subtitle">AI Engineer for Data Scientists Associate</h4>
+
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <img src="assets/img/datacamp.png" alt="Data Camp Logo" width="50" height="50">
+                        <h5 class="qualification__subtitle">DataCamp</h5>
+                    </div>
+                    
+                    <a href="YOUR_HARVARD_LINK_HERE" target="_blank" class="button button--small">View Certificate</a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!--=============== SERVICES ===============-->
+<section class="services section">
+    <span class="section__subtitle">My Services</span>
+    <h2 class="section__title">What I Offer</h2>
+
+    <div class="services__container container grid">
+
+        <!-- AI & Machine Learning -->
+        <div class="services__card">
+            <h3 class="services__title">AI & ML <br> Solutions</h3>
+
+            <span class="services__button">
+                See More <i class='bx bx-right-arrow services__icon'></i>
+            </span>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <i class='bx bx-x services__modal-close'></i>
+
+                    <h3 class="services__modal-title">AI & Machine Learning</h3>
+
+                    <p class="services__modal-description">
+                        I create AI and Machine Learning projects using modern tools and technologies.
+                    </p>
+
+                    <ul class="services__modal-list">
+
+                        <li class="services__modal-item">
+                            <i class='bx bx-check-circle'></i>
+                            <p class="services__modal-info">
+                                Machine Learning model development.
+                            </p>
+                        </li>
+
+                        <li class="services__modal-item">
+                            <i class='bx bx-check-circle'></i>
+                            <p class="services__modal-info">
+                                AI-powered applications and automation.
+                            </p>
+                        </li>
+
+                        <li class="services__modal-item">
+                            <i class='bx bx-check-circle'></i>
+                            <p class="services__modal-info">
+                                Python-based AI solutions.
+                            </p>
+                        </li>
+
+                        <li class="services__modal-item">
+                            <i class='bx bx-check-circle'></i>
+                            <p class="services__modal-info">
+                                Data analysis and prediction systems.
+                            </p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Science -->
+        <div class="services__card">
+            <h3 class="services__title">Data <br> Science</h3>
+
+            <span class="services__button">
+                See More <i class='bx bx-right-arrow services__icon'></i>
+            </span>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <i class='bx bx-x services__modal-close'></i>
+
+                    <h3 class="services__modal-title">Data Science</h3>
+
+                    <p class="services__modal-description">
+                        I work with data to discover insights and create data-driven solutions.
+                    </p>
+
+                    <ul class="services__modal-list">
+
+                        <li class="services__modal-item">
+                            <i class='bx bx-check-circle'></i>
+                            <p class="services__modal-info">
+                                Data cleaning and preprocessing.
+                            </p>
+                        </li>
+
+                        <li class="services__modal-item">
+                            <i class='bx bx-check-circle'></i>
+                            <p class="services__modal-info">
+                                Data visualization dashboards.
+                            </p>
+                        </li>
+
+                        <li class="services__modal-item">
+                            <i class='bx bx-check-circle'></i>
+                            <p class="services__modal-info">
+                                Statistical and predictive analysis.
+                            </p>
+                        </li>
+
+                        <li class="services__modal-item">
+                            <i class='bx bx-check-circle'></i>
+                            <p class="services__modal-info">
+                                SQL and database management.
+                            </p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Software Development -->
+        <div class="services__card">
+            <h3 class="services__title">Software<br> Development</h3>
+
+            <span class="services__button">
+                See More <i class='bx bx-right-arrow services__icon'></i>
+            </span>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <i class='bx bx-x services__modal-close'></i>
+
+                    <h3 class="services__modal-title">Software Development</h3>
+
+                    <p class="services__modal-description">
+                        I build responsive and modern software applications with clean UI and smooth user experience.
+                    </p>
+
+                    <ul class="services__modal-list">
+
+                        <li class="services__modal-item">
+                            <i class='bx bx-check-circle'></i>
+                            <p class="services__modal-info">
+                                Responsive website development.
+                            </p>
+                        </li>
+
+                        <li class="services__modal-item">
+                            <i class='bx bx-check-circle'></i>
+                            <p class="services__modal-info">
+                                Frontend UI/UX design.
+                            </p>
+                        </li>
+
+                        <li class="services__modal-item">
+                            <i class='bx bx-check-circle'></i>
+                            <p class="services__modal-info">
+                                Modern portfolio and business websites.
+                            </p>
+                        </li>
+
+                        <li class="services__modal-item">
+                            <i class='bx bx-check-circle'></i>
+                            <p class="services__modal-info">
+                                Website optimization and maintenance.
+                            </p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cybersecurity -->
+        <div class="services__card">
+            <h3 class="services__title">Cyber <br> Security</h3>
+
+            <span class="services__button">
+                See More <i class='bx bx-right-arrow services__icon'></i>
+            </span>
+
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <i class='bx bx-x services__modal-close'></i>
+
+                    <h3 class="services__modal-title">Cyber Security</h3>
+
+                    <p class="services__modal-description">
+                        I explore cybersecurity practices and tools to improve digital security and protection.
+                    </p>
+
+                    <ul class="services__modal-list">
+
+                        <li class="services__modal-item">
+                            <i class='bx bx-check-circle'></i>
+                            <p class="services__modal-info">
+                                Basic network security practices.
+                            </p>
+                        </li>
+
+                        <li class="services__modal-item">
+                            <i class='bx bx-check-circle'></i>
+                            <p class="services__modal-info">
+                                Linux and security tools usage.
+                            </p>
+                        </li>
+
+                        <li class="services__modal-item">
+                            <i class='bx bx-check-circle'></i>
+                            <p class="services__modal-info">
+                                Security awareness and best practices.
+                            </p>
+                        </li>
+
+                        <li class="services__modal-item">
+                            <i class='bx bx-check-circle'></i>
+                            <p class="services__modal-info">
+                                Ethical hacking learning projects.
+                            </p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!--=============== WORK ===============-->
+<section class="work section" id="work">
+    <span class="section__subtitle">My Portfolio</span>
+    <h2 class="section__title">Projects & Research</h2>
+
+    <div class="work__filters">
+        <span class="work__item active-work" data-filter='all'>All</span>
+        <span class="work__item" data-filter='.ai'>AI/ML</span>
+        <span class="work__item" data-filter='.data'>Data Science</span>
+        <span class="work__item" data-filter='.cyber'>Cybersecurity</span>
+    </div>
+
+    <div class="work__container container grid">
+
+        <!-- AI Project -->
+        <div class="work__card mix ai">
+            <img src="assets/img/ai.png" alt="" class="work__img">
+
+            <h3 class="work__title">AI Chatbot System</h3>
+
+            <a href="#" class="work__button">
+                View Project <i class='bx bx-right-arrow work__icon'></i>
+            </a>
+        </div>
+
+        <!-- ML Project -->
+        <div class="work__card mix ai">
+            <img src="assets/img/ml.png" alt="" class="work__img">
+
+            <h3 class="work__title">Machine Learning Model</h3>
+
+            <a href="#" class="work__button">
+                View Project <i class='bx bx-right-arrow work__icon'></i>
+            </a>
+        </div>
+
+        <!-- Data Science -->
+        <div class="work__card mix data">
+            <img src="assets/img/data.png" alt="" class="work__img">
+
+            <h3 class="work__title">Data Analytics Dashboard</h3>
+
+            <a href="#" class="work__button">
+                View Project <i class='bx bx-right-arrow work__icon'></i>
+            </a>
+        </div>
+
+        <!-- Visualization -->
+        <div class="work__card mix data">
+            <img src="assets/img/visualization.png" alt="" class="work__img">
+
+            <h3 class="work__title">Data Visualization Project</h3>
+
+            <a href="#" class="work__button">
+                View Project <i class='bx bx-right-arrow work__icon'></i>
+            </a>
+        </div>
+
+        <!-- Cybersecurity -->
+        <div class="work__card mix cyber">
+            <img src="assets/img/cyber.png" alt="" class="work__img">
+
+            <h3 class="work__title">Network Security Lab</h3>
+
+            <a href="#" class="work__button">
+                View Project <i class='bx bx-right-arrow work__icon'></i>
+            </a>
+        </div>
+
+        <!-- Linux Security -->
+        <div class="work__card mix cyber">
+            <img src="assets/img/security.jpg" alt="" class="work__img">
+
+            <h3 class="work__title">Linux Security Setup</h3>
+
+            <a href="#" class="work__button">
+                View Project <i class='bx bx-right-arrow work__icon'></i>
+            </a>
+        </div>
+
+    </div>
+    
+    <div class="work__load-more">
+        <button class="button work__load-more-button" id="work-load-more" type="button">Load More</button>
+    </div>
+</section>
+
+        <!--=============== LATEST UPDATES ===============-->
+        <section class="updates section" id="updates">
+            <span class="section__subtitle">News, events and releases</span>
+            <h2 class="section__title">Latest Updates</h2>
+
+            <div class="updates__container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="updates__card swiper-slide">
+                        <div class="updates__media">
+                            <img src="assets/img/work1.jpg" alt="AI Portfolio Refresh preview" class="updates__img">
+                        </div>
+
+                        <div class="updates__content">
+                            <div class="updates__meta">
+                                <span class="updates__tag updates__tag--release">Project Release</span>
+                                <span class="updates__date">June 2026</span>
+                            </div>
+
+                            <h3 class="updates__title">AI Portfolio Refresh Launch Update</h3>
+                            <p class="updates__description">
+                                The latest portfolio refresh adds cleaner motion, clearer storytelling, and faster browsing.
+                            </p>
+                            <a href="#work" class="updates__link">View projects <i class='bx bx-right-arrow'></i></a>
+                        </div>
+                    </div>
+
+                    <div class="updates__card swiper-slide">
+                        <div class="updates__media">
+                            <img src="assets/img/work2.jpg" alt="AI product design event preview" class="updates__img">
+                        </div>
+
+                        <div class="updates__content">
+                            <div class="updates__meta">
+                                <span class="updates__tag updates__tag--event">Event</span>
+                                <span class="updates__date">May 2026</span>
+                            </div>
+
+                            <h3 class="updates__title">AI Product Design Community Talk</h3>
+                            <p class="updates__description">
+                                I shared AI product design patterns, rapid prototyping, and workflows with attendees.
+                            </p>
+                            <a href="#contact" class="updates__link">Invite me to speak <i class='bx bx-right-arrow'></i></a>
+                        </div>
+                    </div>
+
+                    <div class="updates__card swiper-slide">
+                        <div class="updates__media">
+                            <img src="assets/img/work3.jpg" alt="New project pipeline preview" class="updates__img">
+                        </div>
+
+                        <div class="updates__content">
+                            <div class="updates__meta">
+                                <span class="updates__tag updates__tag--news">News</span>
+                                <span class="updates__date">April 2026</span>
+                            </div>
+
+                            <h3 class="updates__title">New Project Pipeline Is Open</h3>
+                            <p class="updates__description">
+                                New project openings are now available for product, UI/UX, and AI collaborations.
+                            </p>
+                            <a href="#contact" class="updates__link">Start a project <i class='bx bx-right-arrow'></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+    <span class="section__subtitle">Get in touch</span>
+    <h3 class="section__title">Contact Me</h3>
+
+    <div class="contact__container container grid">
+        <div class="contact__content">
+            <h3 class="contact__title contact__title-info">Talk to me</h3>
+
+            <div class="contact__info">
+                <div class="contact__card">
+                    <i class='bx bx-mail-send contact__card-icon'></i>
+                    <h3 class="contact__card-title">Email</h3>
+                    <span class="contact__card-data">omiruonline@gmail.com</span>
+
+                    <a href="mailto:omiruonline@gmail.com" target="_blank" class="contact__button">
+                        Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                    </a>
+                </div>
+
+                <div class="contact__card">
+                    <i class='bx bxl-whatsapp contact__card-icon'></i>
+                    <h3 class="contact__card-title">Whatsapp</h3>
+                    <span class="contact__card-data">+94 77 260 2443</span>
+
+                    <a href="https://api.whatsapp.com/send?phone=+94772602443&text=Hey there!" target="_blank"
+                        class="contact__button">
+                        Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                    </a>
+                </div>
+
+                <div class="contact__card">
+                    <i class='bx bxl-twitter contact__card-icon'></i>
+                    <h3 class="contact__card-title">Twitter</h3>
+                    <span class="contact__card-data">usertw</span>
+
+                    <a href="https://twitter.com/usertw" target="_blank" class="contact__button">
+                        Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact__content">
+            <h3 class="contact__title contact__title-form">Write Me your Message</h3>
+
+            <form id="contact-form" class="contact__form">
+                <div class="contact__form-div">
+                    <label class="contact__form-tag">Name</label>
+                    <input type="text" name="user_name" placeholder="Enter name" class="contact__form-input" required>
+                </div>
+
+                <div class="contact__form-div">
+                    <label class="contact__form-tag">Mail</label>
+                    <input type="email" name="user_email" placeholder="Enter email" class="contact__form-input" required>
+                </div>
+
+                <div class="contact__form-div contact__form-area">
+                    <label class="contact__form-tag">Message</label>
+                    <textarea name="message" cols="30" rows="10" placeholder="Write your Message" class="contact__form-input" required></textarea>
+                </div>
+
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </div>
+    </div> 
+</section>
+
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title"><a href="#">O M I R U.</a></h1>
+
+            <ul class="footer__list">
+
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Home</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#work" class="footer__link">Work</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#contact" class="footer__link">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <li class="footer__social-item">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-linkedin footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-github footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-google footer__social-icon'></i>
+                    </a>
+                </li>
+                
+                <li class="footer__social-item">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-apple footer__social-icon'></i>
+                    </a>
+                </li>
+            </ul>
+
+
+            <span class="footer__copy">
+                Made with
+    <span class="footer__tech">
+        <i class='bx bxl-html5'></i>
+        <i class='bx bxl-css3'></i>
+        <i class='bx bxl-javascript'></i>
+    </span>
+
+    2026
+    <a href="#" class="footer__copy-link">O M I R U.</a>
+    All rights reserved.
+</span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+
+    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="email.js"></script>
+
+    <script src="assets/js/email.js"></script>
+
+</body>
+
+</html>
