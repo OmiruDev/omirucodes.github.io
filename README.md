@@ -1,36 +1,30 @@
-# omiru.website
+# Omiru Ranshan (XEON 👽) — Alien Edition Cybersecurity Portfolio
 
-A static portfolio website for Omiru Ranshan (photography and multimedia).
+A high-performance, modern, and eye-friendly personal portfolio for **Omiru Ranshan**, featuring the **XEON Alien Edition** cyber defense aesthetic.
 
-## Tech stack
-- HTML
-- CSS
-- JavaScript
+## 👽 Alien Edition Features & Themes
+- **Alien Edition Theme (Default)**: Deep cosmic void (`#050811`) with bioluminescent extraterrestrial lime (`#39ff14`) and xenon cyan (`#00f0ff`) accents.
+- **Alien Bootloader Screen**:
+  - High-res animated cyber alien emblem with glowing breathing animation.
+  - Extraterrestrial kernel boot log with alien emoji `👽` and bypass button.
+- **Theme Preset Engine**:
+  - `👽 Alien`: Bioluminescent Extraterrestrial Cyber
+  - `🐉 Kali`: Kali Linux Cyan & Deep Navy
+  - `🏴‍☠️ BlackArch`: Offensive Cyber Crimson
+  - `📟 Matrix`: High-contrast Phosphor Emerald
+  - `☀️ Light`: Crisp Daylight Terminal
+- **Interactive Terminal CLI (`$_ CLI`)**:
+  - Accessible via `$_ CLI` button or shortcut (`` ` `` / `Ctrl + ~`).
+  - Alien command: type `alien` for Alien Edition telemetry & clearance status!
+  - CTF Easter Egg: `cat flag.txt` reveals `FLAG{0m1ru_x30n_4l13n_3d1t10n_👽}`.
+  - Tap-to-run command chips for mobile users.
+- **Zero Errors & Verified Assets**:
+  - All images verified with 0 missing assets.
+  - Interactive validated contact form with direct WhatsApp (`👋 Hi Xeon 👽`) & Email dispatch.
 
-## Project structure
-- `index.html` — main page
-- `assets/css/` — styles
-- `assets/js/` — scripts
-- `assets/images/` — images and icons
-- `assets/font/` — fonts
-
-## Local development
-1. Clone the repository
-2. Open `index.html` directly in your browser, or use a simple static server:
-   - Node: `npx serve` or `npx http-server`
-   - Python: `python3 -m http.server`
-3. Edit files in `assets/css/` and `assets/js/` as needed.
-
-## Build/Deploy
-This is a static site suitable for GitHub Pages.
-- Custom domain is configured via `CNAME`.
-- Push to `main` to update the site.
-
-## Accessibility and SEO
-- Descriptive `alt` text for images
-- Semantic headings
-- Open Graph and Twitter Card meta tags
-- Mobile-friendly viewport
-
-## License
-See [LICENSE](LICENSE).
+## 💻 Local Preview
+```bash
+cd /home/xeon/Documents/omiru.website
+python3 -m http.server 8080
+```
+Then visit [http://localhost:8080](http://localhost:8080) in your browser.
