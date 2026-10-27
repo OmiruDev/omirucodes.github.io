@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="kali">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+
+  <!-- Primary Meta Tags -->
+  <title>Omiru Ranshan | Cyber Security & Linux Engineer</title>
+  <meta name="title" content="Omiru Ranshan | Cyber Security & Linux Engineer">
+  <meta name="description" content="Omiru Ranshan — Cybersecurity Undergraduate, Penetration Tester, and Linux enthusiast specializing in offensive security, network defense, and secure system engineering.">
+  <meta name="keywords" content="Omiru Ranshan, Xeon, Alien Edition, Cybersecurity, Penetration Testing, Kali Linux, BlackArch, Ethical Hacking, Network Security, CCNA, Splunk, Sri Lanka">
+  <meta name="author" content="Omiru Ranshan">
+  <meta name="theme-color" content="#050811">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://omiru.codes/">
+  <meta property="og:title" content="Omiru Ranshan | Cyber Security & Linux Engineer">
+  <meta property="og:description" content="Cybersecurity Undergraduate & Linux Lover Portfolio.">
+  <meta property="og:image" content="./assets/images/about-banner.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://omiru.codes/">
+  <meta property="twitter:title" content="Omiru Ranshan | Cyber Security & Linux Engineer">
+  <meta property="twitter:description" content="Cybersecurity Undergraduate & Linux Lover Portfolio.">
+  <meta property="twitter:image" content="./assets/images/about-banner.png">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- Google Fonts: JetBrains Mono & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Boxicons for Modern Cyber Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Pre-render Theme Setter to prevent flashing -->
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('omiru_cyber_theme');
+        if (savedTheme && ['alien', 'kali', 'blackarch', 'matrix', 'purple', 'light'].includes(savedTheme)) {
+          document.documentElement.setAttribute('data-theme', savedTheme);
+        } else {
+          document.documentElement.setAttribute('data-theme', 'kali');
+        }
+      } catch (e) {
+       document.documentElement.setAttribute('data-theme', 'kali');
+      }
+    })();
+  </script>
+</head>
+
+<body class="active" id="top">
+
+  <!-- ==========================================
+       CLEAN MINIMALIST LOADING SCREEN
+       (Medium Alien Emoji Only with Progress Line)
+  =========================================== -->
+  <div class="loading" data-loading aria-label="Loading personal website">
+    <div class="loading-alien-box">
+      <span class="alien-emoji-glow" role="img" aria-label="Alien emoji">👽</span>
+      <div class="loading-progress-line">
+        <div class="loading-progress-bar" data-boot-progress></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       SITE TOP HEADER & SYSTEM STATUS BAR
+  =========================================== -->
+  <header class="top-header" aria-label="Site header">
+    <div class="brand-wrapper">
+      <a class="header-brand brand-name" href="#top" aria-label="Omiru Ranshan home">
+        <span class="brand-name">XEON</span>
+        <span class="brand-cursor">&lt;_</span>
+      </a>
+    </div>
+
+    <div class="header-controls">
+      <!-- Dynamic Theme Preset Switcher (Alien, Kali, BlackArch, Matrix, Purple, Light) -->
+      <div class="theme-switch-group" role="group" aria-label="Theme Presets">
+        <button type="button" class="theme-btn" data-set-theme="alien" title="Alien Edition (👽)">
+          <span class="theme-icon">👽</span> <span class="theme-label">Alien</span>
+        </button>
+        <button type="button" class="theme-btn active" data-set-theme="kali" title="Kali Linux Edition">
+          <span class="theme-icon"><img src="./assets/images/kali-logo.png" alt="Kali" class="theme-btn-img" width="16" height="16"></span> <span class="theme-label">Kali</span>
+        </button>
+        <button type="button" class="theme-btn" data-set-theme="blackarch" title="BlackArch Edition">
+          <span class="theme-icon"><img src="./assets/images/blackarch-logo.png" alt="BlackArch" class="theme-btn-img" width="16" height="16"></span> <span class="theme-label">BlackArch</span>
+        </button>
+        <button type="button" class="theme-btn" data-set-theme="matrix" title="Matrix Edition">
+          <span class="theme-icon"><img src="./assets/images/matrix-logo.png" alt="Matrix" class="theme-btn-img" width="16" height="16"></span> <span class="theme-label">Matrix</span>
+        </button>
+        <button type="button" class="theme-btn" data-set-theme="purple" title="Purple Cyber Edition">
+          <span class="theme-icon">🟣</span> <span class="theme-label">Purple</span>
+        </button>
+        <button type="button" class="theme-btn" data-set-theme="light" title="Light Terminal (💡)">
+          <span class="theme-icon">💡</span> <span class="theme-label">Light</span>
+        </button>
+      </div>
+
+      <!-- Quick Background FX Toggle -->
+      <button type="button" class="tool-toggle-btn active" data-toggle-fx title="Toggle Background Rain">
+        <i class='bx bx-pulse'></i> <span>FX: ON</span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- ==========================================
+       FIXED FLOATING NAVIGATION DOCK
+  =========================================== -->
+  <header class="header" data-header aria-label="Primary navigation dock">
+    <nav class="navbar" data-navbar aria-label="Main navigation">
+      <ul class="navbar-list">
+        <li class="navbar-item">
+          <a href="#home" class="navbar-link active" data-nav-link aria-label="Home">
+            <i class='bx bxs-home-alt-2'></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="#about" class="navbar-link" data-nav-link aria-label="About Omiru">
+            <i class='bx bx-user-pin'></i>
+            <span>About</span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="#skills" class="navbar-link" data-nav-link aria-label="Skills & Arsenal">
+            <i class='bx bx-code-alt'></i>
+            <span>Skills</span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="#education" class="navbar-link" data-nav-link aria-label="Qualifications & Certs">
+            <i class='bx bx-certification'></i>
+            <span>Certs</span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="#projects" class="navbar-link" data-nav-link aria-label="Featured Projects">
+            <i class='bx bx-folder-open'></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="#services" class="navbar-link" data-nav-link aria-label="Security Services">
+            <i class='bx bx-shield-alt-2'></i>
+            <span>Services</span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="#contact" class="navbar-link" data-nav-link aria-label="Contact Omiru">
+            <i class='bx bx-envelope'></i>
+            <span>Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ==========================================
+       MAIN CONTENT
+  =========================================== -->
+  <main>
+    <article>
+
+      <!-- #HERO SECTION -->
+      <section class="section hero" id="home" aria-label="Home section">
+        <div class="container">
+
+          <!-- Left Column: Introduction & Call-to-actions -->
+          <div class="hero-content" data-reveal="left">
+
+            <div class="terminal-prompt-line">
+              <span class="prompt-user">┌──(<span data-theme-prompt>xeon@kali</span>)</span><span class="prompt-sep">-[</span><span class="prompt-path">~/portfolio</span><span class="prompt-sep">]</span>
+            </div>
+
+            <div class="terminal-badge">
+              <span class="status-dot"></span>
+              <span data-theme-hero-badge>ALIEN EDITION // CYBER DEFENSE 👽</span>
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I’m <span class="name-highlight">Omiru Ranshan</span> <span data-theme-emoji style="font-size: 0.85em; vertical-align: middle;">👽</span>
+            </h1>
+
+            <div class="hero-roles-wrapper">
+              <span style="color: var(--accent-primary); margin-right: 8px;">&gt;</span>
+              <span data-typewriter>Cyber Security Undergraduate</span>
+              <span class="typewriter-cursor"></span>
+            </div>
+
+            <p class="hero-bio">
+              Cybersecurity undergraduate and Linux power user specializing in offensive security research, penetration testing, network defense, and hardened system engineering.
+            </p>
+
+            <div class="hero-btn-group">
+              <a href="#projects" class="btn btn-primary">
+                <span>Explore Projects</span>
+                <i class='bx bx-right-arrow-alt'></i>
+              </a>
+
+              <button type="button" class="btn btn-outline" data-open-terminal>
+                <i class='bx bx-terminal'></i>
+                <span>Launch CLI [$_]</span>
+              </button>
+
+              <a href="#contact" class="btn btn-outline">
+                <i class='bx bx-envelope'></i>
+                <span>Contact Me</span>
+              </a>
+            </div>
+
+            <div class="hero-quick-status">
+              <span><i class='bx bx-time-five' style="color: var(--accent-primary);"></i> 2+ Years InfoSec</span>
+              <span><i class='bx bx-badge-check' style="color: var(--status-ok);"></i> CCNA Certified</span>
+              <span><i class='bx bx-map-pin' style="color: var(--status-warn);"></i> Sri Lanka</span>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Fastfetch / Neofetch Terminal HUD (Dynamic Edition) -->
+          <div class="hero-hud-col" data-reveal="right">
+            <div class="neofetch-card">
+              <div class="neofetch-bar">
+                <div class="boot-dots">
+                  <span class="boot-dot red"></span>
+                  <span class="boot-dot yellow"></span>
+                  <span class="boot-dot green"></span>
+                </div>
+                <span class="neofetch-bar-title" data-theme-fastfetch-title>omiru@alien-sec:~ (zsh) 👽</span>
+                <i class='bx bx-window' style="color: var(--text-dim);"></i>
+              </div>
+
+              <div class="neofetch-body">
+                <div class="neofetch-command">
+                  <span>$ fastfetch --profile security-engineer</span>
+                </div>
+
+                <div class="neofetch-grid">
+                  <div class="neofetch-avatar">
+                    <img src="./assets/images/hero-banner.png" alt="Omiru Ranshan avatar" width="120" height="120" loading="eager">
+                  </div>
+
+                  <div class="neofetch-info-table">
+                    <div class="neofetch-row">
+                      <span class="neofetch-key">OS:</span>
+                      <span class="neofetch-val" data-theme-os>Kali Linux [Alien Edition] x86_64 👽</span>
+                    </div>
+                    <div class="neofetch-row">
+                      <span class="neofetch-key">Host:</span>
+                      <span class="neofetch-val" data-theme-host>Omiru Ranshan (XEON)</span>
+                    </div>
+                    <div class="neofetch-row">
+                      <span class="neofetch-key">Kernel:</span>
+                      <span class="neofetch-val" data-theme-kernel>6.8.0-kali-xenon-alien</span>
+                    </div>
+                    <div class="neofetch-row">
+                      <span class="neofetch-key">Uptime:</span>
+                      <span class="neofetch-val">2+ Years in Security Research</span>
+                    </div>
+                    <div class="neofetch-row">
+                      <span class="neofetch-key">Shell:</span>
+                      <span class="neofetch-val">zsh 5.9 (x86_64-pc-linux)</span>
+                    </div>
+                    <div class="neofetch-row">
+                      <span class="neofetch-key">Focus:</span>
+                      <span class="neofetch-val">Pentesting, Web Sec, Forensics</span>
+                    </div>
+                    <div class="neofetch-row">
+                      <span class="neofetch-key">Arsenal:</span>
+                      <span class="neofetch-val">Nmap, Burp, Metasploit, Wireshark</span>
+                    </div>
+                    <div class="neofetch-row">
+                      <span class="neofetch-key">Status:</span>
+                      <span class="neofetch-val highlight" data-theme-status>[● LIVE] Alien Cyber Unit Active</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="neofetch-swatches" aria-hidden="true">
+                  <span class="swatch c1"></span>
+                  <span class="swatch c2"></span>
+                  <span class="swatch c3"></span>
+                  <span class="swatch c4"></span>
+                  <span class="swatch c5"></span>
+                  <span class="swatch c6"></span>
+                  <span class="swatch c7"></span>
+                  <span class="swatch c8"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #GALLERY
+      -->
+
+      <section class="section gallery" id="gallery">
+  <div class="container">
+
+    <ul class="gallery-list">
+
+      <li class="gallery-item" data-reveal>
+
+        <!-- Project 1 -->
+        <div class="gallery-card">
+          <figure class="card-banner img-holder has-before">
+            <img src="./assets/images/gallery-1.png" loading="lazy" alt="Cybersecurity Dashboard" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+            <h3 class="h6">
+              <a href="#" class="card-title">Cybersecurity Dashboard</a>
+            </h3>
+            <span class="card-tag">Security Analysis</span>
+          </div>
+
+          <a href="#" class="btn-icon">
+            <img src="./assets/images/arrow-forward.svg" loading="lazy" alt="arrow">
+          </a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="gallery-card">
+          <figure class="card-banner img-holder has-before">
+            <img src="./assets/images/gallery-2.png" loading="lazy" alt="Network Scanner Tool" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+            <h3 class="h6">
+              <a href="#" class="card-title">Network Scanner Tool</a>
+            </h3>
+            <span class="card-tag">Nmap / Networking</span>
+          </div>
+
+          <a href="#" class="btn-icon">
+            <img src="./assets/images/arrow-forward.svg" loading="lazy" alt="arrow">
+          </a>
+        </div>
+
+      </li>
+
+      <li class="gallery-item" data-reveal>
+
+        <!-- Project 3 -->
+        <div class="gallery-card">
+          <figure class="card-banner img-holder has-before">
+            <img src="./assets/images/gallery-3.png" loading="lazy" alt="AI Prediction Model" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+            <h3 class="h6">
+              <a href="#" class="card-title">AI Prediction Model</a>
+            </h3>
+            <span class="card-tag">Machine Learning</span>
+          </div>
+
+          <a href="#" class="btn-icon">
+            <img src="./assets/images/arrow-forward.svg" loading="lazy" alt="arrow">
+          </a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="gallery-card">
+          <figure class="card-banner img-holder has-before">
+            <img src="./assets/images/gallery-4.png" loading="lazy" alt="Malware Analysis Lab" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+            <h3 class="h6">
+              <a href="#" class="card-title">Malware Analysis Lab</a>
+            </h3>
+            <span class="card-tag">Cybersecurity</span>
+          </div>
+
+          <a href="#" class="btn-icon">
+            <img src="./assets/images/arrow-forward.svg" loading="lazy" alt="arrow">
+          </a>
+        </div>
+
+      </li>
+
+      <li class="gallery-item" data-reveal>
+
+        <!-- Project 5 -->
+        <div class="gallery-card">
+          <figure class="card-banner img-holder has-before">
+            <img src="./assets/images/gallery-5.png" loading="lazy" alt="Data Analysis Project" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+            <h3 class="h6">
+              <a href="#" class="card-title">Data Analysis Project</a>
+            </h3>
+            <span class="card-tag">Pandas / Visualization</span>
+          </div>
+
+          <a href="#" class="btn-icon">
+            <img src="./assets/images/arrow-forward.svg" loading="lazy" alt="arrow">
+          </a>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="gallery-card">
+          <figure class="card-banner img-holder has-before">
+            <img src="./assets/images/gallery-6.png" loading="lazy" alt="Web App Security Test" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+            <h3 class="h6">
+              <a href="#" class="card-title">Web App Security Testing</a>
+            </h3>
+            <span class="card-tag">Burp Suite</span>
+          </div>
+
+          <a href="#" class="btn-icon">
+            <img src="./assets/images/arrow-forward.svg" loading="lazy" alt="arrow">
+          </a>
+        </div>
+
+      </li>
+
+      <li class="gallery-item" data-reveal>
+
+        <!-- Project 7 -->
+        <div class="gallery-card">
+          <figure class="card-banner img-holder has-before">
+            <img src="./assets/images/gallery-7.png" loading="lazy" alt="Deep Learning Model" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+            <h3 class="h6">
+              <a href="#" class="card-title">Deep Learning Model</a>
+            </h3>
+            <span class="card-tag">TensorFlow / PyTorch</span>
+          </div>
+
+          <a href="#" class="btn-icon">
+            <img src="./assets/images/arrow-forward.svg" loading="lazy" alt="arrow">
+          </a>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="gallery-card">
+          <figure class="card-banner img-holder has-before">
+            <img src="./assets/images/gallery-8.png" loading="lazy" alt="Cloud Deployment Project" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+            <h3 class="h6">
+              <a href="#" class="card-title">Cloud Deployment Project</a>
+            </h3>
+            <span class="card-tag">Docker / Cloud</span>
+          </div>
+
+          <a href="#" class="btn-icon">
+            <img src="./assets/images/arrow-forward.svg" loading="lazy" alt="arrow">
+          </a>
+        </div>
+
+      </li>
+
+    </ul>
+
+    <a href="#about" class="scroll-down" aria-label="Scroll to About">
+      <img src="./assets/images/scroll-down.svg" loading="lazy" alt="scroll">
+    </a>
+
+    <img src="./assets/images/gallery-shape.svg" loading="lazy" alt="" class="shape">
+
+  </div>
+</section>
+
+      <!-- #TECH SPECIALIZATIONS -->
+      <section class="section category" aria-label="Technical specializations">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <p class="section-subtitle">Core Disciplines</p>
+            <h2 class="h2">Security Specializations</h2>
+            <p class="section-text">
+              Specialized offensive and defensive disciplines honed through intensive laboratory practice, CTFs, and system hardening.
+            </p>
+          </div>
+
+          <ul class="category-list">
+            <li class="category-item" data-reveal>
+              <div class="category-card">
+                <div class="category-icon-box">
+                  <i class='bx bx-shield-quarter'></i>
+                </div>
+                <h3 class="card-title">Penetration Testing</h3>
+                <p class="card-desc">
+                  Proactive vulnerability assessments across web applications, APIs, and networks using industry methodologies and standard tools.
+                </p>
+              </div>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <div class="category-card">
+                <div class="category-icon-box">
+                  <i class='bx bx-terminal'></i>
+                </div>
+                <h3 class="card-title">Linux Systems & Hardening</h3>
+                <p class="card-desc">
+                  Deep proficiency in Kali Linux, BlackArch, Arch Linux, system chrooting, SELinux, permissions, and shell scripting.
+                </p>
+              </div>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <div class="category-card">
+                <div class="category-icon-box">
+                  <i class='bx bx-bug-alt'></i>
+                </div>
+                <h3 class="card-title">Ethical Hacking & Labs</h3>
+                <p class="card-desc">
+                  Exploitation research, OWASP Top 10 auditing, password security simulations, and hands-on capture the flag challenges.
+                </p>
+              </div>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <div class="category-card">
+                <div class="category-icon-box">
+                  <i class='bx bx-brain'></i>
+                </div>
+                <h3 class="card-title">AI & Security Automation</h3>
+                <p class="card-desc">
+                  Leveraging Python, Scikit-learn, and machine learning models for anomaly detection and automated security pipelines.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- #ABOUT SECTION -->
+      <section class="section about" id="about" aria-label="About section">
+        <div class="container">
+
+          <div class="about-banner-box" data-reveal="left">
+            <img src="./assets/images/about-banner.png" alt="Omiru Ranshan working" class="about-banner-img" width="420" height="560" loading="lazy">
+            <div class="about-badge-float">
+              <i class='bx bx-check-shield'></i>
+              <div>
+                <strong style="display: block; font-size: 1.35rem; color: var(--text-main);">Certified Defender</strong>
+                <span style="font-size: 1.2rem; color: var(--text-muted);">CCNA & HND Cyber</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content" data-reveal="right">
+            <div class="terminal-prompt-line">
+              <span class="prompt-user"><span data-theme-prompt>xeon@kali</span></span><span class="prompt-sep">:</span><span class="prompt-path">~</span><span class="prompt-sep">$</span>
+              <span>cat about_omiru.md</span>
+            </div>
+
+            <p class="section-subtitle">Biography</p>
+            <h2 class="h2">Passionate About Defending & Hardening Digital Frontiers</h2>
+
+            <p class="section-text" style="margin-inline: 0;">
+              I am Omiru Ranshan (handle: <strong>XEON <span data-theme-emoji>👽</span></strong>), a cybersecurity undergraduate, penetration tester, and ardent Linux enthusiast based in Chilaw, Sri Lanka.
+            </p>
+
+            <p class="section-text" style="margin-inline: 0;">
+              My everyday workflow revolves around Kali Linux, BlackArch, and Arch terminal environments, dissecting network packets, automating vulnerability checks with Python, and engineering secure application frameworks. When not hunting bugs, I explore data science and AI applications in threat detection.
+            </p>
+
+            <div class="about-stats-grid">
+              <div class="stat-card">
+                <div class="stat-number">2+</div>
+                <div class="stat-label">Years Cyber Lab Work</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Security Tools Mastered</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Ethical Security Focus</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Linux Passion</div>
+              </div>
+            </div>
+
+            <div class="about-signature-row">
+              <div style="font-size: 1.3rem; color: var(--text-dim);">
+                <em>"Security is not a product, but a continuous process of discipline."</em>
+              </div>
+              <img src="./assets/images/signature.png" alt="Omiru Ranshan signature" class="signature-img" width="130" height="75" loading="lazy">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- #SKILLS & ARSENAL SECTION -->
+      <section class="section skills" id="skills" aria-label="Skills & Tools section">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <p class="section-subtitle">Arsenal & Competencies</p>
+            <h2 class="h2">Security Tools & Technical Skills</h2>
+            <p class="section-text">
+              The offensive and defensive arsenal I wield daily for vulnerability research, networking, exploitation testing, and automation.
+            </p>
+
+            <div class="skills-toggle" role="tablist">
+              <button class="toggle-btn active" data-toggle-btn role="tab" aria-selected="true">Security Tools</button>
+              <button class="toggle-btn" data-toggle-btn role="tab" aria-selected="false">Core Competencies</button>
+            </div>
+          </div>
+
+          <div class="skills-box" data-reveal>
+
+            <!-- TOOLS LIST (Active by default) -->
+            <ul class="skills-list" role="tabpanel">
+              <li>
+                <div class="skill-card" tabindex="0" title="Kali Linux - Primary Security OS">
+                  <div class="card-icon"><img src="./assets/images/kali.png" alt="Kali Linux" loading="lazy"></div>
+                  <div class="tooltip">Kali Linux</div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-card" tabindex="0" title="Nmap - Network Recon & Port Mapper">
+                  <div class="card-icon"><img src="./assets/images/nmap.png" alt="Nmap" loading="lazy"></div>
+                  <div class="tooltip">Nmap</div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-card" tabindex="0" title="Metasploit - Exploitation Framework">
+                  <div class="card-icon"><img src="./assets/images/metasploit.png" alt="Metasploit" loading="lazy"></div>
+                  <div class="tooltip">Metasploit</div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-card" tabindex="0" title="Wireshark - Packet Sniffing & Protocol Analysis">
+                  <div class="card-icon"><img src="./assets/images/wireshark.png" alt="Wireshark" loading="lazy"></div>
+                  <div class="tooltip">Wireshark</div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-card" tabindex="0" title="Burp Suite - Web App Security Testing">
+                  <div class="card-icon"><img src="./assets/images/burp.png" alt="Burp Suite" loading="lazy"></div>
+                  <div class="tooltip">Burp Suite</div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-card" tabindex="0" title="Python - Security & Exploit Scripting">
+                  <div class="card-icon"><img src="./assets/images/python.png" alt="Python" loading="lazy"></div>
+                  <div class="tooltip">Python</div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-card" tabindex="0" title="Docker - Isolated Lab Containers">
+                  <div class="card-icon"><img src="./assets/images/docker.png" alt="Docker" loading="lazy"></div>
+                  <div class="tooltip">Docker</div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-card" tabindex="0" title="Git & GitHub - Version Control">
+                  <div class="card-icon"><img src="./assets/images/git.png" alt="Git" loading="lazy"></div>
+                  <div class="tooltip">Git / GitHub</div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-card" tabindex="0" title="Linux Systems - Kernel, Bash & Arch">
+                  <div class="card-icon"><img src="./assets/images/linux.png" alt="Linux" loading="lazy"></div>
+                  <div class="tooltip">Linux Kernel</div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-card" tabindex="0" title="TensorFlow - ML & Anomaly Detection">
+                  <div class="card-icon"><img src="./assets/images/tensorflow.png" alt="TensorFlow" loading="lazy"></div>
+                  <div class="tooltip">TensorFlow</div>
+                </div>
+              </li>
+              <li>
+
+            </ul>
+
+            <!-- CORE SKILLS LIST -->
+            <ul class="tools-list" role="tabpanel" aria-hidden="true">
+              <li>
+                <div class="skill-card" tabindex="0" title="Penetration Testing">
+                  <div class="card-icon"><img src="./assets/images/hacking.png" alt="Pentesting" loading="lazy"></div>
+                  <div class="tooltip">Pentesting</div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-card" tabindex="0" title="Network Security">
+                  <div class="card-icon"><img src="./assets/images/network.png" alt="Network Security" loading="lazy"></div>
+                  <div class="tooltip">Network Security</div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-card" tabindex="0" title="Cybersecurity & Hardening">
+                  <div class="card-icon"><img src="./assets/images/cyber.png" alt="Cybersecurity" loading="lazy"></div>
+                  <div class="tooltip">System Hardening</div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-card" tabindex="0" title="Ethical Hacking">
+                  <div class="card-icon"><img src="./assets/images/data.png" alt="Ethical Hacking" loading="lazy"></div>
+                  <div class="tooltip">Ethical Hacking</div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-card" tabindex="0" title="SQL & Secure Databases">
+                  <div class="card-icon"><img src="./assets/images/database.png" alt="Databases" loading="lazy"></div>
+                  <div class="tooltip">SQL / DB Security</div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-card" tabindex="0" title="Cloud & Virtualization">
+                  <div class="card-icon"><img src="./assets/images/cloud.png" alt="Cloud" loading="lazy"></div>
+                  <div class="tooltip">Cloud Security</div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-card" tabindex="0" title="Machine Learning">
+                  <div class="card-icon"><img src="./assets/images/ml.png" alt="Machine Learning" loading="lazy"></div>
+                  <div class="tooltip">Machine Learning</div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-card" tabindex="0" title="Deep Learning">
+                  <div class="card-icon"><img src="./assets/images/deep-learning.png" alt="Deep Learning" loading="lazy"></div>
+                  <div class="tooltip">Deep Learning</div>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+
+          <!-- Proficiency Progress Bars -->
+          <div class="skills-wrapper" data-reveal>
+            <div class="skill-category">
+              <h3 class="h4">
+                <span>Offensive & Defensive Security</span>
+                <i class='bx bx-shield-quarter' style="color: var(--accent-primary);"></i>
+              </h3>
+              <ul class="skill-progress-list">
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <span>Linux Security & Kali Administration</span>
+                    <span>88%</span>
+                  </div>
+                  <div class="progress-bar-bg">
+                    <div class="progress-fill" style="width: 88%;"></div>
+                  </div>
+                </li>
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <span>Network Defense & Packet Analysis</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="progress-bar-bg">
+                    <div class="progress-fill" style="width: 85%;"></div>
+                  </div>
+                </li>
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <span>Web Application Penetration Testing</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="progress-bar-bg">
+                    <div class="progress-fill" style="width: 80%;"></div>
+                  </div>
+                </li>
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <span>SIEM & SOC Alert Monitoring (Splunk)</span>
+                    <span>75%</span>
+                  </div>
+                  <div class="progress-bar-bg">
+                    <div class="progress-fill" style="width: 75%;"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="h4">
+                <span>Engineering & Professional</span>
+                <i class='bx bx-cog' style="color: var(--accent-primary);"></i>
+              </h3>
+              <ul class="skill-progress-list">
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <span>Analytical Problem Solving & Triage</span>
+                    <span>95%</span>
+                  </div>
+                  <div class="progress-bar-bg">
+                    <div class="progress-fill" style="width: 95%;"></div>
+                  </div>
+                </li>
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <span>Python & Bash Script Automation</span>
+                    <span>86%</span>
+                  </div>
+                  <div class="progress-bar-bg">
+                    <div class="progress-fill" style="width: 86%;"></div>
+                  </div>
+                </li>
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <span>Secure Architecture & API Hardening</span>
+                    <span>82%</span>
+                  </div>
+                  <div class="progress-bar-bg">
+                    <div class="progress-fill" style="width: 82%;"></div>
+                  </div>
+                </li>
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <span>Incident Response & Digital Forensics</span>
+                    <span>78%</span>
+                  </div>
+                  <div class="progress-bar-bg">
+                    <div class="progress-fill" style="width: 78%;"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- #EDUCATION & CERTIFICATIONS -->
+      <section class="section education" id="education" aria-label="Education and certifications">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <p class="section-subtitle">Academic & Professional Credentials</p>
+            <h2 class="h2">Education & Certifications</h2>
+            <p class="section-text">
+              Formal cybersecurity degree coursework, international credentials, and ongoing certifications.
+            </p>
+
+            <div class="education-toggle" role="tablist">
+              <button class="toggle-btn active" data-toggle-btn role="tab" aria-selected="true">Academic Degrees</button>
+              <button class="toggle-btn" data-toggle-btn role="tab" aria-selected="false">Certifications</button>
+            </div>
+          </div>
+
+          <!-- Academic Qualifications -->
+          <ul class="qualification-list" role="tabpanel" data-reveal>
+            <li class="qualification-card">
+              <div class="card-logo">
+                <img src="./assets/images/university-logo-1.png" alt="NEBULA Institute of Technology" width="52" height="52" loading="lazy">
+              </div>
+              <div class="card-content">
+                <h3 class="h4 card-title">Higher National Diploma in Cybersecurity</h3>
+                <p class="card-subtitle">NEBULA Institute of Technology</p>
+                <time class="publish-date" datetime="2026-2028">2026 - 2028 (Undergraduate)</time>
+              </div>
+            </li>
+
+            <li class="qualification-card">
+              <div class="card-logo">
+                <img src="./assets/images/university-logo-2.png" alt="Harvard University" width="52" height="52" loading="lazy">
+              </div>
+              <div class="card-content">
+                <h3 class="h4 card-title">Professional Certificate in Data Science</h3>
+                <p class="card-subtitle">Harvard University (HarvardX)</p>
+                <time class="publish-date" datetime="2025">2025</time>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Certifications List (All images point to valid .png files!) -->
+          <ul class="certification-list" role="tabpanel" aria-hidden="true" data-reveal>
+            <li>
+              <div class="certification-card-link">
+                <div class="cert-banner">
+                  <img src="./assets/images/category-1.png" alt="CCNA Network Security" loading="lazy">
+                </div>
+                <div class="card-content">
+                  <h4 class="card-title">CCNA: Introduction to Networks</h4>
+                  <p class="card-subtitle">Cisco Networking Academy</p>
+                  <span class="publish-date">Networking & Routing</span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="certification-card-link">
+                <div class="cert-banner">
+                  <img src="./assets/images/category-2.png" alt="Linux System Administration" loading="lazy">
+                </div>
+                <div class="card-content">
+                  <h4 class="card-title">Linux Administration & Kali CLI</h4>
+                  <p class="card-subtitle">Linux Professional Institute</p>
+                  <span class="publish-date">System Hardening</span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="certification-card-link">
+                <div class="cert-banner">
+                  <img src="./assets/images/category-3.png" alt="Ethical Hacking Essentials" loading="lazy">
+                </div>
+                <div class="card-content">
+                  <h4 class="card-title">Ethical Hacking Essentials (EHE)</h4>
+                  <p class="card-subtitle">EC-Council / Coursera</p>
+                  <span class="publish-date">Offensive Defense</span>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="certification-card-link">
+                <div class="cert-banner">
+                  <img src="./assets/images/category-4.png" alt="Splunk Core Certified" loading="lazy">
+                </div>
+                <div class="card-content">
+                  <h4 class="card-title">Splunk SIEM Threat Monitoring</h4>
+                  <p class="card-subtitle">Splunk Enterprise Training</p>
+                  <span class="publish-date">Blue Team Defense</span>
+                </div>
+              </div>
+            </li>
+
+            <!-- Extra certs hidden initially -->
+            <li class="hidden-cert">
+              <div class="certification-card-link">
+                <div class="cert-banner">
+                  <img src="./assets/images/category-5.png" alt="Burp Suite Web Security" loading="lazy">
+                </div>
+                <div class="card-content">
+                  <h4 class="card-title">Web Application Security & Burp</h4>
+                  <p class="card-subtitle">PortSwigger Web Security Academy</p>
+                  <span class="publish-date">OWASP Top 10</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="hidden-cert">
+              <div class="certification-card-link">
+                <div class="cert-banner">
+                  <img src="./assets/images/category-6.png" alt="Python for Cybersecurity" loading="lazy">
+                </div>
+                <div class="card-content">
+                  <h4 class="card-title">Python for Cyber Defense & Scripting</h4>
+                  <p class="card-subtitle">University of Michigan / Coursera</p>
+                  <span class="publish-date">Security Automation</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="hidden-cert">
+              <div class="certification-card-link">
+                <div class="cert-banner">
+                  <img src="./assets/images/category-7.png" alt="Cloud Security & Containers" loading="lazy">
+                </div>
+                <div class="card-content">
+                  <h4 class="card-title">Cloud Defense & Docker Security</h4>
+                  <p class="card-subtitle">Linux Foundation</p>
+                  <span class="publish-date">DevSecOps</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="hidden-cert">
+              <div class="certification-card-link">
+                <div class="cert-banner">
+                  <img src="./assets/images/category-8.png" alt="Digital Forensics" loading="lazy">
+                </div>
+                <div class="card-content">
+                  <h4 class="card-title">Digital Forensics & Incident Response</h4>
+                  <p class="card-subtitle">InfoSec Institute</p>
+                  <span class="publish-date">Triage & Analysis</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="load-more-wrapper">
+            <button type="button" class="btn btn-outline" data-load-more-certs style="display: none;">
+              <span>Load More Certifications</span>
+              <i class='bx bx-chevron-down'></i>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- #FEATURED PROJECTS -->
+      <section class="section news" id="projects" aria-label="Featured projects section">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <p class="section-subtitle">Real-world Implementations</p>
+            <h2 class="h2">Featured Security Projects</h2>
+            <p class="section-text">
+              Hands-on tools, vulnerability scanners, and automated defense systems developed to solve modern cybersecurity challenges.
+            </p>
+
+            <!-- Filter Bar -->
+            <div class="project-filter-bar">
+              <button type="button" class="filter-btn active" data-filter-btn="all">All Projects</button>
+              <button type="button" class="filter-btn" data-filter-btn="cyber">Cybersecurity</button>
+              <button type="button" class="filter-btn" data-filter-btn="pentest">Pentesting</button>
+              <button type="button" class="filter-btn" data-filter-btn="automation">AI & Automation</button>
+            </div>
+          </div>
+
+          <div class="project-grid" data-reveal>
+
+            <!-- Project 1 -->
+            <div class="project-card" data-project-category="cyber pentest">
+              <div class="project-banner">
+                <img src="./assets/images/gallery-1.png" alt="Web Vulnerability Scanner" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">OWASP</span>
+                  <span class="project-tag">Security</span>
+                </div>
+                <h3 class="card-title">Web Vulnerability Scanner</h3>
+                <p class="card-text">
+                  Automated Python CLI tool designed to probe web targets for common vulnerabilities including Cross-Site Scripting (XSS), SQL Injection, and insecure headers.
+                </p>
+                <div class="project-footer">
+                  <time datetime="2026-03">March 2026</time>
+                  <a href="#" class="project-view-btn" data-view-project>
+                    <span>Inspect</span> <i class='bx bx-search-alt-2'></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-project-category="cyber pentest">
+              <div class="project-banner">
+                <img src="./assets/images/gallery-2.png" alt="Network Scanner Tool" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">Nmap</span>
+                  <span class="project-tag">Scapy</span>
+                  <span class="project-tag">Networking</span>
+                </div>
+                <h3 class="card-title">Network Scanner & Subnet Mapper</h3>
+                <p class="card-text">
+                  Multi-threaded network reconnaissance tool capable of subnet discovery, TCP/UDP port mapping, OS fingerprinting, and service banner grabbing.
+                </p>
+                <div class="project-footer">
+                  <time datetime="2026-02">February 2026</time>
+                  <a href="#" class="project-view-btn" data-view-project>
+                    <span>Inspect</span> <i class='bx bx-search-alt-2'></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" data-project-category="automation">
+              <div class="project-banner">
+                <img src="./assets/images/gallery-3.png" alt="AI Threat Detection Model" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">TensorFlow</span>
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">ML</span>
+                </div>
+                <h3 class="card-title">AI Network Anomaly Detector</h3>
+                <p class="card-text">
+                  Machine learning model trained on network packet telemetry to classify abnormal traffic patterns, port sweep scans, and distributed attacks.
+                </p>
+                <div class="project-footer">
+                  <time datetime="2026-01">January 2026</time>
+                  <a href="#" class="project-view-btn" data-view-project>
+                    <span>Inspect</span> <i class='bx bx-search-alt-2'></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card" data-project-category="cyber pentest">
+              <div class="project-banner">
+                <img src="./assets/images/gallery-4.png" alt="Malware Analysis Lab" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">Reverse Engineering</span>
+                  <span class="project-tag">Linux</span>
+                  <span class="project-tag">Sandbox</span>
+                </div>
+                <h3 class="card-title">Malware Analysis & Forensics Lab</h3>
+                <p class="card-text">
+                  Isolated hypervisor environment configured with Volatility, Ghidra, and Wireshark for static and dynamic analysis of suspicious binaries and memory dumps.
+                </p>
+                <div class="project-footer">
+                  <time datetime="2025-12">December 2025</time>
+                  <a href="#" class="project-view-btn" data-view-project>
+                    <span>Inspect</span> <i class='bx bx-search-alt-2'></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card" data-project-category="cyber">
+              <div class="project-banner">
+                <img src="./assets/images/gallery-5.png" alt="Secure Authentication System" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">Node / Express</span>
+                  <span class="project-tag">JWT</span>
+                  <span class="project-tag">Bcrypt</span>
+                </div>
+                <h3 class="card-title">Secure Authentication & RBAC</h3>
+                <p class="card-text">
+                  High-security authentication gateway featuring encrypted JWT tokens, rate limiting, brute-force throttling, and role-based access control.
+                </p>
+                <div class="project-footer">
+                  <time datetime="2025-11">November 2025</time>
+                  <a href="#" class="project-view-btn" data-view-project>
+                    <span>Inspect</span> <i class='bx bx-search-alt-2'></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card" data-project-category="automation">
+              <div class="project-banner">
+                <img src="./assets/images/gallery-6.png" alt="Linux Hardening Automation" loading="lazy">
+              </div>
+              <div class="project-content">
+                <div class="project-tags">
+                  <span class="project-tag">Bash</span>
+                  <span class="project-tag">Linux</span>
+                  <span class="project-tag">CIS Benchmark</span>
+                </div>
+                <h3 class="card-title">Linux Hardening Automation</h3>
+                <p class="card-text">
+                  Automated Bash audit scripts implementing CIS Benchmark standards, configuring UFW firewalls, SSH key enforcement, and permission audits.
+                </p>
+                <div class="project-footer">
+                  <time datetime="2025-10">October 2025</time>
+                  <a href="#" class="project-view-btn" data-view-project>
+                    <span>Inspect</span> <i class='bx bx-search-alt-2'></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- #SERVICES SECTION -->
+      <section class="section service" id="services" aria-label="Services section">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <p class="section-subtitle">What I Provide</p>
+            <h2 class="h2">Security & Technical Services</h2>
+            <p class="section-text">
+              Professional cybersecurity assessments, penetration testing, and hardened infrastructure deployment.
+            </p>
+          </div>
+
+          <div class="service-grid" data-reveal>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class='bx bx-search-alt'></i>
+              </div>
+              <h3 class="card-title">Vulnerability Assessments</h3>
+              <p class="card-subtitle">
+                Systematic scanning and manual testing of web applications and endpoints to identify vulnerabilities before adversaries do.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <i class='bx bx-lock-alt'></i>
+              </div>
+              <h3 class="card-title">Penetration Testing</h3>
+              <p class="card-subtitle">
+                Simulating real-world attack vectors against networks and web apps to evaluate defensive resilience and remediation strategies.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <i class='bx bx-server'></i>
+              </div>
+              <h3 class="card-title">Linux Server Hardening</h3>
+              <p class="card-subtitle">
+                Fortifying Linux servers with kernel parameter tuning, fail2ban, SSH key policies, automated backups, and firewall configurations.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <i class='bx bx-code-block'></i>
+              </div>
+              <h3 class="card-title">Secure Software Architecture</h3>
+              <p class="card-subtitle">
+                Auditing codebases for OWASP Top 10 risks, secure token handling, password hashing algorithms, and sanitization protocols.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- #CTF & RESEARCH LABS -->
+      <section class="section portfolio" id="portfolio" aria-label="CTF and research writeups">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <p class="section-subtitle">Field Research & Practice</p>
+            <h2 class="h2">CTF Labs & Case Studies</h2>
+            <p class="section-text">
+              Detailed technical write-ups and threat triage case studies documenting hands-on capture-the-flag solutions.
+            </p>
+          </div>
+
+          <div class="ctf-grid" data-reveal>
+            <div class="ctf-card">
+              <div class="ctf-banner">
+                <img src="./assets/images/gallery-7.png" alt="CTF Web Exploitation writeup" loading="lazy">
+              </div>
+              <div class="ctf-content">
+                <span class="ctf-tag">Web Exploitation Lab</span>
+                <h3 class="card-title">Bypassing Authentication via SQL Injection in Custom PHP Endpoints</h3>
+              </div>
+            </div>
+
+            <div class="ctf-card">
+              <div class="ctf-banner">
+                <img src="./assets/images/gallery-8.png" alt="SOC Alert Triage Case Study" loading="lazy">
+              </div>
+              <div class="ctf-content">
+                <span class="ctf-tag">Blue Team Case Study</span>
+                <h3 class="card-title">SOC Alert Triage: Detecting Distributed SSH Brute-Force in Splunk</h3>
+              </div>
+            </div>
+
+            <div class="ctf-card">
+              <div class="ctf-banner">
+                <img src="./assets/images/gallery-5.png" alt="API Hardening Checklist" loading="lazy">
+              </div>
+              <div class="ctf-content">
+                <span class="ctf-tag">Defense Checklist</span>
+                <h3 class="card-title">REST API Hardening: Mitigating Broken Object Level Authorization (BOLA)</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================
+      NEWS & EVENTS
+  =============================== -->
+
+      <section class="section news-events" id="news-events" aria-labelledby="portfolio-label">
+        <div class="container">
+
+          <div class="portfolio-list">
+
+            <div class="wrapper">
+
+              <p class="section-subtitle" id="news-section-label">Latest Cybersecurity Updates</p>
+              <h2 class="h2" id="portfolio-label">Cybersecurity News & Events</h2>
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 700; --height: 605;">
+                  <img src="./assets/images/gallery-5.png" width="700" height="605" loading="lazy" alt="CTF web exploitation challenge"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">CTF Write-Up: Web Exploitation Lab</a>
+                  </h3>
+
+                  <p class="card-tag">Capture The Flag</p>
+                </div>
+
+                <a href="#" class="btn-icon" aria-label="Read CTF write-up details">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                    <path d="M0 10H41" stroke="currentColor" stroke-width="2" />
+                    <path d="M33 1L41.9 10.2727L33 19" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </a>
+
+              </div>
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 700; --height: 605;">
+                  <img src="./assets/images/gallery-8.png" width="700" height="605" loading="lazy" alt="SOC analyst monitoring dashboard"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">SOC Alert Triage Workflow</a>
+                  </h3>
+
+                  <p class="card-tag">Blue Team Practice</p>
+                </div>
+
+                <a href="#" class="btn-icon" aria-label="Read SOC workflow details">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                    <path d="M0 10H41" stroke="currentColor" stroke-width="2" />
+                    <path d="M33 1L41.9 10.2727L33 19" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </a>
+
+              </div>
+
+            </div>
+
+            <div class="wrapper">
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 700; --height: 1000;">
+                  <img src="./assets/images/gallery-6.png" width="700" height="1000" loading="lazy" alt="Malware reverse engineering notes"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">Malware Analysis Study Notes</a>
+                  </h3>
+
+                  <p class="card-tag">Reverse Engineering</p>
+                </div>
+
+                <a href="#" class="btn-icon" aria-label="Read malware analysis notes">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                    <path d="M0 10H41" stroke="currentColor" stroke-width="2" />
+                    <path d="M33 1L41.9 10.2727L33 19" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </a>
+
+              </div>
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 700; --height: 850;">
+                  <img src="./assets/images/gallery-7.png" width="700" height="850" loading="lazy" alt="Secure API testing checklist"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">Secure API Hardening Checklist</a>
+                  </h3>
+
+                  <p class="card-tag">Application Security</p>
+                </div>
+
+                <a href="#" class="btn-icon" aria-label="Read API hardening checklist">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                    <path d="M0 10H41" stroke="currentColor" stroke-width="2" />
+                    <path d="M33 1L41.9 10.2727L33 19" stroke="currentColor" stroke-width="2" />
+                  </svg>
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <img src="./assets/images/portfolio-shape.svg" width="286" height="232" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+      <!-- #CONTACT SECTION -->
+      <section class="section contact" id="contact" aria-label="Contact section">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <p class="section-subtitle">Secure Communication Channel</p>
+            <h2 class="h2">Transmit a Message <span data-theme-emoji>👽</span></h2>
+            <p class="section-text">
+              Have a project, security audit, or collaboration inquiry? Send an encrypted transmission or reach out via direct channels.
+            </p>
+          </div>
+
+          <div class="contact-layout" data-reveal>
+
+            <!-- Left: Direct Channels -->
+            <div class="contact-channels">
+              <a href="mailto:omiruonline@gmail.com" class="contact-info-card">
+                <div class="contact-card-icon">
+                  <i class='bx bx-mail-send'></i>
+                </div>
+                <div class="contact-card-meta">
+                  <div class="contact-card-label">Direct Email</div>
+                  <div class="contact-card-val">omiruonline@gmail.com</div>
+                </div>
+                <i class='bx bx-right-arrow-alt' style="font-size: 2rem; color: var(--accent-primary);"></i>
+              </a>
+
+              <a href="https://wa.me/94772602443?text=%F0%9F%91%8B%20Hi%20Xeon%20%F0%9F%91%BD" target="_blank" rel="noopener noreferrer" class="contact-info-card" data-wa-link>
+                <div class="contact-card-icon" style="background: rgba(37, 211, 102, 0.15); border-color: rgba(37, 211, 102, 0.4); color: #25d366;">
+                  <i class='bx bxl-whatsapp'></i>
+                </div>
+                <div class="contact-card-meta">
+                  <div class="contact-card-label">WhatsApp Channel</div>
+                  <div class="contact-card-val">+94 77 260 2443</div>
+                </div>
+                <i class='bx bx-right-arrow-alt' style="font-size: 2rem; color: #25d366;"></i>
+              </a>
+
+              <div class="contact-info-card">
+                <div class="contact-card-icon">
+                  <i class='bx bx-map-pin'></i>
+                </div>
+                <div class="contact-card-meta">
+                  <div class="contact-card-label">Location</div>
+                  <div class="contact-card-val">Chilaw, Puttalam, Sri Lanka</div>
+                </div>
+              </div>
+
+              <div class="contact-info-card">
+                <div class="contact-card-icon">
+                  <i class='bx bx-shield-quarter'></i>
+                </div>
+                <div class="contact-card-meta">
+                  <div class="contact-card-label">Availability</div>
+                  <div class="contact-card-val" style="color: var(--status-ok);">Open for Audits & Collaborations</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Interactive Terminal Contact Form -->
+            <div class="contact-form-box">
+              <div class="form-terminal-bar">
+                <div class="boot-dots">
+                  <span class="boot-dot red"></span>
+                  <span class="boot-dot yellow"></span>
+                  <span class="boot-dot green"></span>
+                </div>
+                <div class="form-terminal-title" data-theme-form-title>ENCRYPTED_MESSAGE_DISPATCH [TLS 1.3] 👽</div>
+                <i class='bx bx-lock-alt' style="color: var(--status-ok);"></i>
+              </div>
+
+              <form class="contact-form" data-contact-form>
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">IDENTITY / NAME</label>
+                  <input type="text" id="contact-name" class="form-control" placeholder="Enter your name or handle" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">RETURN_ENDPOINT / EMAIL</label>
+                  <input type="email" id="contact-email" class="form-control" placeholder="e.g. user@domain.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-phone" class="form-label">TELEMETRY / PHONE (OPTIONAL)</label>
+                  <input type="tel" id="contact-phone" class="form-control" placeholder="+94 7X XXX XXXX">
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message" class="form-label">PAYLOAD / MESSAGE</label>
+                  <textarea id="contact-message" class="form-control" placeholder="Describe your project, audit request, or inquiry..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                  <i class='bx bx-send'></i>
+                  <span>Transmit Encrypted Payload</span>
+                </button>
+
+                <div class="form-feedback" data-form-feedback role="alert"></div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+  =========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand-block">
+        <div class="brand-name" style="font-size: 2rem;">
+          XEON<span data-theme-emoji>👽</span><span class="brand-dot">.</span>
+        </div>
+        <div class="footer-copyright">
+          <span>XEON MADE THIS <span data-theme-emoji>👽</span></span> &copy; 2026 <strong style="color: var(--text-main);">Omiru Ranshan</strong>. All rights reserved.
+        </div>
+      </div>
+
+      <div class="footer-social-list" aria-label="Social media links">
+        <a href="https://www.linkedin.com/in/omiru/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn Profile">
+          <i class='bx bxl-linkedin'></i>
+        </a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="GitHub Profile">
+          <i class='bx bxl-github'></i>
+        </a>
+        <a href="https://wa.me/94772602443?text=%F0%9F%91%8B%20Hi%20Xeon%20%F0%9F%91%BD" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="WhatsApp Channel" data-wa-link>
+          <i class='bx bxl-whatsapp'></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Twitter Profile">
+          <i class='bx bxl-twitter'></i>
+        </a>
+        <a href="mailto:omiruonline@gmail.com" class="footer-social-link" aria-label="Direct Email">
+          <i class='bx bx-envelope'></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       INTERACTIVE LINUX TERMINAL DRAWER MODAL
+  =========================================== -->
+  <div class="terminal-modal" data-terminal-modal role="dialog" aria-modal="true" aria-label="Interactive Linux Terminal">
+    <div class="terminal-window">
+      <div class="terminal-titlebar">
+        <div class="boot-dots">
+          <span class="boot-dot red"></span>
+          <span class="boot-dot yellow"></span>
+          <span class="boot-dot green"></span>
+        </div>
+        <div class="terminal-titlebar-title" data-theme-term-title>xeon@kali-security:~ (zsh)</div>
+        <button type="button" class="terminal-close-btn" data-close-terminal aria-label="Close terminal">&times;</button>
+      </div>
+
+      <div class="terminal-output" data-terminal-output>
+        <div class="terminal-output-line info">
+          Linux Kernel Security Terminal (tty1)
+        </div>
+        <div class="terminal-output-line info">
+          Welcome to Omiru Ranshan's interactive terminal. Type <span style="color: var(--accent-primary); font-weight: 700;">help</span> or <span style="color: var(--accent-primary); font-weight: 700;">edition</span> for commands.
+        </div>
+        <div class="terminal-output-line highlight">
+          * Quick Commands: edition, whoami, skills, tools, projects, neofetch, theme kali/purple, cat flag.txt
+        </div>
+      </div>
+
+      <!-- Quick Command Chips for One-Tap Mobile Interaction -->
+      <div class="terminal-chips" aria-label="Quick terminal commands">
+        <button type="button" class="chip-btn" data-term-cmd="edition">edition</button>
+        <button type="button" class="chip-btn" data-term-cmd="whoami">whoami</button>
+        <button type="button" class="chip-btn" data-term-cmd="skills">skills</button>
+        <button type="button" class="chip-btn" data-term-cmd="tools">tools</button>
+        <button type="button" class="chip-btn" data-term-cmd="projects">projects</button>
+        <button type="button" class="chip-btn" data-term-cmd="neofetch">neofetch</button>
+        <button type="button" class="chip-btn" data-term-cmd="cat flag.txt">cat flag.txt</button>
+        <button type="button" class="chip-btn" data-term-cmd="contact">contact</button>
+        <button type="button" class="chip-btn" data-term-cmd="clear">clear</button>
+      </div>
+
+      <div class="terminal-input-row">
+        <span class="terminal-prompt-inline"><span data-theme-prompt>xeon@kali</span>:~$</span>
+        <input type="text" class="terminal-cli-input" data-terminal-input placeholder="type command here (e.g. whoami, help)..." autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       PROJECT QUICKVIEW MODAL
+  =========================================== -->
+  <div class="modal-backdrop" data-project-modal role="dialog" aria-modal="true" aria-label="Project details modal">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close" data-modal-close aria-label="Close modal">&times;</button>
+      <div class="terminal-badge" style="margin-bottom: 10px;">
+        <span class="status-dot"></span>
+        <span>SECURITY_AUDIT_REPORT</span>
+      </div>
+      <h3 class="h3" data-modal-title style="margin-bottom: 12px;">Project Details</h3>
+      <div class="project-tags" data-modal-tags style="margin-bottom: 16px;"></div>
+      <p class="section-text" data-modal-desc style="margin-inline: 0; margin-bottom: 24px; color: var(--text-muted);"></p>
+
+      <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 14px; font-size: 1.25rem;">
+        <strong style="color: var(--accent-primary); display: block; margin-bottom: 6px;">[+] Technical Findings & Scope:</strong>
+        <ul style="color: var(--text-dim); list-style: disc; padding-left: 20px; line-height: 1.7;">
+          <li>Automated payload injection testing and boundary validation.</li>
+          <li>Comprehensive error handling and sanitized parameter extraction.</li>
+          <li>Tested against OWASP Top 10 security standards in an isolated Linux sandbox.</li>
+        </ul>
+      </div>
+
+      <div style="margin-top: 20px; text-align: right;">
+        <button type="button" class="btn btn-primary" data-modal-close>Close Inspection</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to top button -->
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>▲ 0%</a>
+
+  <!-- Custom crosshair cursor -->
+  <div class="cursor" data-cursor aria-hidden="true"></div>
+
+  <!-- Custom JS -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/mobile-touch.js"></script>
+</body>
+
+</html>
